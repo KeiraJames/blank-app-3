@@ -11,7 +11,7 @@ collection = db['c1']
 
 def get_latest_stats():
     latest_data = collection.find().sort('timestamp', -1).limit(1)  # Sort by timestamp descending
-    return latest_data[0] if latest_data.count() > 0 else None
+    return latest_data[0] if latest_data.count_documents({}) > 0 else None
 
 st.title("Plant Care Monitor")
 
