@@ -32,7 +32,7 @@ if st.button("Give Me Stats Update"):
         st.write(f"**Moisture Level**: {moisture_value}")
         st.write(f"**Last Updated**: {timestamp}")
 
-        if moisture_value < 300:  # Example threshold for moisture
+        if moisture_value < 400:  # Example threshold for moisture
             st.warning("Your plant needs water!")
         elif moisture_value < 600:
             st.info("Your plant is doing okay!")
