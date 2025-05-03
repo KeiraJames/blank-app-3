@@ -28,7 +28,7 @@ if st.button("Give Me Stats Update"):
         # Convert timestamp to a readable format
         timestamp = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
-        st.write(f"**Temperature**: {temperature}°C")
+        st.write(f"**Temperature**: {temperature}°F")
         st.write(f"**Moisture Level**: {moisture_value}")
         st.write(f"**Last Updated**: {timestamp}")
 
